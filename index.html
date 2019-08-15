@@ -1,12 +1,367 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Connor's Website</title>
-</head>
+<title>&#x1f60a</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('./Pictures/bg2.jpg');
+    min-height: 100%;
+}
+
+/* https://www.w3schools.com/w3images/parallax1.jpg */
+
+/* Second image (links) */
+.bgimg-2 {
+    background-image: url("./Pictures/bg3.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("./Pictures/bg4.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (BLOG) */
+.bgimg-4 {
+    background-image: url("./Pictures/bg5.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+</style>
 <body>
 
-<h1>Hello Internet!</h1>
-<p>This is a paragraph.</p>
-<script>alert('Random Javascript!');</script>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#links" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TECH</a>
+	<a href="#BLOG" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#links" class="w3-bar-item w3-button" onclick="toggleFunction()">TECH</a>
+	<a href="#BLOG" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+
+
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">@KyyberKass1</span>
+	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">Cyber Security Analyst</span>	
+	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-medium w3-hide-large">KyyberKass1</span>
+ 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center"><em>We take security seriously</em></p>
+  <p>Mauris id purus pulvinar tellus dictum facilisis. Vivamus facilisis ullamcorper nisi, a vehicula justo. Duis malesuada egestas odio quis efficitur. Vestibulum et viverra eros. In arcu odio, blandit ut velit dictum, tempor placerat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget elit eros. Donec nisi est, bibendum id augue eu, vestibulum tristique libero. Donec vulputate libero vitae augue posuere, ac efficitur risus vestibulum. Vestibulum venenatis malesuada enim auctor cursus. Cras purus magna, tincidunt id viverra quis, mollis gravida felis. </p>
+ <p>
+Mauris id purus pulvinar tellus dictum facilisis. Vivamus facilisis ullamcorper nisi, a vehicula justo. Duis malesuada egestas odio quis efficitur. Vestibulum et viverra eros. In arcu odio, blandit ut velit dictum, tempor placerat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget elit eros. Donec nisi est, bibendum id augue eu, vestibulum tristique libero.<br/> 
+Mauris id purus pulvinar tellus dictum facilisis. Vivamus facilisis ullamcorper nisi, a vehicula justo. Duis malesuada egestas odio quis efficitur. Vestibulum et viverra eros. In arcu odio, blandit ut velit dictum, tempor placerat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget elit eros.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Elisa Santa Monica SOC</b></p><br>
+      <img src="./Pictures/Elisa.png" class="w3-round w3-image" alt="Our logo" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Mauris id purus pulvinar tellus dictum facilisis. Vivamus facilisis ullamcorper nisi, a vehicula justo. Duis malesuada egestas odio quis efficitur. Vestibulum et viverra eros. In arcu odio, blandit ut velit dictum, tempor placerat tortor.</p>
+	
+	  Lorem Ipsum toiminnan kulmakivet: <br/>  
+
+	<span>&#8226;</span> Lorem Ipsum<br/> 
+	<span>&#8226;</span> Mauris id purus pulvinar tellus<br/> 
+	<span>&#8226;</span> ivamus facilisis ullamcorper nisi<br/> 
+	<span>&#8226;</span> Vestibulum et viverra eros. In arcu odio, blandit ut velit dictum, tempor placerat tortor.
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">We are really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Detection</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-black w3-hover-opacity-off w3-center" style="width:99%">99%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Incident Response and Mitigation </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-black  w3-hover-opacity-off w3-center" style="width:99%">99%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Situation Awareness</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-black w3-hover-opacity-off w3-center" style="width:99%">99%</div>
+  </div>
+</div>
+
+
+<div class="w3-row w3-center w3-black w3-opacity w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <a href="https:google.fi">
+    <span class="w3-xlarge">Test link
+	</a></span><br>
+    Our boring corporate site
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14</span><br>
+    Blog posts
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">50+</span><br>
+    Major Incidents solved since 2017
+  </div>
+  <div class="w3-quarter w3-section">
+  <a href="https://google.com">
+    <span class="w3-xlarge">150+ </a></span><br>
+    Social media mentions
+	
+  </div>
+</div>
+
+<!-- Second Parallax Image with links Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">TECHNOLOGY</span>
+  </div>
+</div>
+
+<!-- Container (links Section) -->
+<div class="w3-content w3-container w3-padding-64" id="links">
+  <h3 class="w3-center">Technology Partners</h3>
+  <p class="w3-center"><em>Here are some of my favorite technology providers.<br> Click on the images to access their  site</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+	<a href="https://www.splunk.com/">
+     <img src="./Pictures/logo1.png"   style="width:100%"  class="w3-hover-opacity" alt="Splunk"> 
+	</a>
+    </div>
+
+
+
+	    <div class="w3-col m3">
+		<a href="https://www.f-secure.com/fi_FI/web/business_fi/radar">
+      <img src="./Pictures/logo2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="F-Secure Radar">
+	   </a>
+    </div>
+	
+    <div class="w3-col m3">
+		<a href="https://www.paloaltonetworks.com/products/cortex">
+      <img src="./Pictures/logo3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Palo Alto Cortex">
+	   </a>
+    </div>
+	
+	
+  
+  </div>
+</div>
+
+
+
+<!-- Second Parallax Image with links Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">RECENT BLOG POSTS</span>
+  </div>
+</div>
+
+<!-- Container (BLOGces) -->
+<div class="w3-content w3-container w3-padding-64" id="BLOG">
+  <h3 class="w3-center">Blog posts!</h3>
+  <p class="w3-center"><em>Here are some recent blog posts.<br> Click on the images to access blog site</em></p><br>
+
+<div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Blog 20.20.20</b></p><br>
+      <img src="./Pictures/Elisa.png" class="w3-round w3-image" alt="Our logo" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Ut facilisis eros erat, ornare fringilla magna porta non. Morbi nec ipsum at lorem finibus laoreet ac tincidunt justo. Nunc mi mi, hendrerit ut tincidunt et, commodo id urna. Nulla accumsan erat eget eros tempor, id molestie lorem porta. Fusce id odio quis nunc imperdiet viverra ultrices nec nisi. Nunc aliquam nulla eu dapibus consequat. Nullam euismod massa eu sapien volutpat, ac facilisis libero pulvinar. Aliquam ornare nisl sodales, porttitor lacus id, ultricies mi. Cras id iaculis eros. Morbi et lorem sit amet lorem aliquet tempus id id metus. Ut nunc augue, posuere quis urna et, porta mattis arcu. </p> 
+    </div>
+  </div>
+  
+  
+  
+<div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Blog 21.20.20</b></p><br>
+      <img src="./Pictures/Elisa.png" class="w3-round w3-image" alt="Our logo" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Mauris id purus pulvinar tellus dictum facilisis. Vivamus facilisis ullamcorper nisi, a vehicula justo. Duis malesuada egestas odio quis efficitur. Vestibulum et viverra eros. In arcu odio, blandit ut velit dictum, tempor placerat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget elit eros. Donec nisi est, bibendum id augue eu, vestibulum tristique libero. Donec vulputate libero vitae augue posuere, ac efficitur risus vestibulum. Vestibulum venenatis malesuada enim auctor cursus. Cras purus magna, tincidunt id viverra quis, mollis gravida felis. </p>
+<p>	
+Curabitur non auctor ante. Donec quis nisl porta, sodales mi fringilla, porta nisi. Vestibulum pellentesque rhoncus nunc, eget semper magna sodales in. Donec cursus nisl quis est viverra, et ultricies turpis blandit. Quisque quis efficitur libero. Aliquam a nulla viverra, mattis risus ut, tristique est. Curabitur convallis interdum tortor vel gravida. </p>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+
+<!-- Third Parallax Image with links Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>InfoSec breach or just curious? Contact us on either matter! </em></p>
+
+  <div class="w3-content w3-container w3-padding-64">
+
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Helsinki, FI<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 050 - 0000000<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: xxx@xxx.fi<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 ">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+	<a href="https://google.com">
+    <i class="fa fa-facebook-official w3-hover-opacity"></a></i> 
+	<a href="https://google.com">
+    <i class="fa fa-instagram w3-hover-opacity"></a></i>
+	<a href="https://google.com">
+    <i class="fa fa-snapchat w3-hover-opacity"></a></i>
+	<a href="https://google.com">
+    <i class="fa fa-pinterest-p w3-hover-opacity"></a></i>
+	<a href="https://google.com">
+    <i class="fa fa-twitter w3-hover-opacity"></a></i>
+	<a href="https://google.com">
+    <i class="fa fa-linkedin w3-hover-opacity"></a></i>
+  </div>
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
 </html>
